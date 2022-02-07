@@ -3,7 +3,17 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - ladder
+  - Woodcutter
+  - cheackpoint
+  - End
+  - Prirva
+  - Coin
+  - End1
+  - End2
+  - End3
+  - End4
   layers:
   - Default
   - TransparentFX
@@ -11,9 +21,9 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
-  - 
+  - Background
+  - Tile
+  - Ladder
   - 
   - 
   - 
@@ -38,6 +48,21 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Background
+    uniqueID: 2631502535
+    locked: 0
+  - name: Tile
+    uniqueID: 1553374375
+    locked: 0
+  - name: Ladder
+    uniqueID: 3593359861
+    locked: 0
+  - name: Chackpoint
+    uniqueID: 2057136925
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: ui
+    uniqueID: 2401277437
     locked: 0

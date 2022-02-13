@@ -7,13 +7,13 @@ using UnityEngine.UI;
 public class UI : MonoBehaviour
 
 {
-    public static int lastLvl = 2;
+    public static int lastLvl = 4;
     // Start is called before the first frame update
     void Start()
     {
         Scene scene = SceneManager.GetActiveScene();
         Debug.Log("Active Scene is '" + scene.name + "'.");
-        if(scene.buildIndex > 3)
+        if(scene.buildIndex > 4)
         {
             lastLvl = scene.buildIndex;
             Debug.Log("Max lvl ='" + scene.name + "'.");
@@ -31,6 +31,7 @@ public class UI : MonoBehaviour
     }
     public void ListLevel()
     {
+        PlayerPrefs.SetInt("PositionPlayer", 0);
         SceneManager.LoadScene("PickLVL", LoadSceneMode.Single);
     }
     public void Menu()
@@ -73,6 +74,7 @@ public class UI : MonoBehaviour
     }
     public void Ladderboard()
     {
+        PlayerPrefs.SetInt("PositionPlayer", 0);
         SceneManager.LoadScene("Ladderboard", LoadSceneMode.Single);
     }
     public void Rename()

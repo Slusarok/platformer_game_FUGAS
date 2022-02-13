@@ -62,6 +62,7 @@ public class Checkpoint : MonoBehaviour
         }
         if (collision.CompareTag("Prirva"))
         {
+            PlayerPrefs.SetInt("PositionPlayer", 0);
             CoinLogic.globalScoreCounter = 0;
             hpBar[countDeath].enabled = false;
             Start();

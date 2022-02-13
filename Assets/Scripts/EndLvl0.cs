@@ -1,12 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class EndLvl0 : MonoBehaviour
 {
     Rigidbody2D rb;
     BoxCollider2D bc2d;
+    public ScoreUi scoreUi;
+    public Score score;
     // Start is called before the first frame update
     void Start()
     {
@@ -40,7 +44,7 @@ public class EndLvl0 : MonoBehaviour
         if (collision.gameObject.CompareTag("End4"))
         {
             PlayerPrefs.SetInt("PositionPlayer", 0);
-            SceneManager.LoadScene("Menu", LoadSceneMode.Single);
+            SceneManager.LoadScene("Ladderboard", LoadSceneMode.Single);
         }
 
     }

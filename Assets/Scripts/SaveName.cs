@@ -10,6 +10,7 @@ public class SaveName : MonoBehaviour
 
     public void AddingName()
     {
+        PlayerPrefs.SetString("Player Name", "Player"); 
         PlayerPrefs.SetString("Player Name", InputField.text);
         SceneManager.LoadScene(1);
     }

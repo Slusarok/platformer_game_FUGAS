@@ -22,6 +22,7 @@ public class CoinLogic : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        PlayerPrefs.SetInt("Counter", globalScoreCounter);
         ScoreInLvl.text = "Coins pickup in lvl:" + ScoreInLvlCounter;
         globalScore.text = "All your coins:" + globalScoreCounter;
     }
